@@ -8,10 +8,10 @@ main(){
 	for(int i=0;i<n;i++)
 		cin>>arr[i];
 	for(int i=0;i<n;i++)
-		arr1[arr[i]%n]=arr[i];
+		arr1[arr[i]]=i+1;
 				
 
-	for(int i=0;i<n;i++)
+	for(int i=1;i<=n;i++)
 		cout<<arr1[i]<<" ";
 	cout<<endl;	
 }
