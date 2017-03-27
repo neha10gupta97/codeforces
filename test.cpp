@@ -1,10 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 main(){
-	int i,n;
-	vector <int> x,n;
-	for(i=0;i<n;i++)
-		cin>>x[i];
-	for(i=0;i<n;i++)
-		cin>>x[i];
+	int arr[3]={1,2,3};
+	vector <int> x(arr,arr+3);
+	x.erase(x.begin());
+	for(int i=0;i<x.size();i++)
+		cout<<x[i]<<" ";
+}
+	
 	
