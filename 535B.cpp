@@ -6,21 +6,15 @@ main(){
 	int i,ans=0,x,l=0,yes=0;
 	x=n;
 	while(x){
-		l++;
+		l=x%10;
+		if(l==4)
+			ans+=1*pow(2,yes);
+		else if(l==7)
+			ans+=2*pow(2,yes);
 		x/=10;
+		yes++;
 	}
-	ans=pow(2,l-1)-2;
-	for(i=pow(10,l-1);i<n;i++){
-		x=i,yes=0;		
-		while(x){
-			if(x%10!=4&x%10!=7){
-				yes=1;
-				break;
-			}
-		}
-		if(yes==0)
-			ans++;
-	}
+	
 	cout<<ans<<endl;
 }
 			
